@@ -56,7 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CScrip\NewBehaviourScript.cs" />
+    <Compile Include="Assets\CScrip\StaticTest.cs" />
+    <Compile Include="Assets\CScrip\disconnet.cs" />
+    <Compile Include="Assets\CScrip\Sand.cs" />
+    <Compile Include="Assets\CScrip\SocketClient.cs" />
+    <Compile Include="Assets\CScrip\connet.cs" />
+    <Compile Include="Assets\CScrip\Txtdown.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Packages\WebSocketSharp-netstandard.1.0.1\lib\netstandard2.0\websocket-sharp.xml" />

@@ -1,4 +1,5 @@
 import { WebSocketServer } from "ws";
+socket.id
 /*
 send("asdasdasd");
 
@@ -60,15 +61,40 @@ socket.on("")
             => message : 메세지 오면 불림
             => close : 연결이 끊어지면 불림
 
+
+
 */
+
+
+
 
 wsServer.on("connection", socket => {
 
+    socket.id = id++;
+     
+    console.log(`${socket.id}가 접속했습미다.`)
+
     socket.on("message", data => { // data = 클라가 보내준 데이터
         console.log(data.toString());
+        broadCast(`${data.toString}`)
+        /*
+        c# = $"{}"
+        js = `${}`
+        */
     });
 
+    
 });
+
+function broadCast(msg)
+{
+    wsServer.clients.forEach(s => {
+
+        s.sand("msg")
+            
+        });
+        
+}
 
 // 람각(상훈) 또는 람다
 /*
@@ -87,7 +113,6 @@ DOMove().OnComplete(a => {asdfasdf} );
 socket.on("message", data => {
 
 });
-
-
+//noode main.js 
 
 */
